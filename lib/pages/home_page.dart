@@ -12,11 +12,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   String bill = '';
-<<<<<<< HEAD
   int howManyPeople = 1;
-=======
-  int howManyFriends = 1;
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
   int tip = 0;
   int tax = 0;
 
@@ -65,11 +61,7 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-<<<<<<< HEAD
                                 'People',
-=======
-                                'Friends',
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
                                 style: MyTextStyles.body,
                               ),
                               Text(
@@ -87,11 +79,7 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-<<<<<<< HEAD
                                 howManyPeople.toString(),
-=======
-                                howManyFriends.toString(),
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
                                 style: MyTextStyles.body,
                               ),
                               Text(
@@ -119,19 +107,11 @@ class _HomePageState extends State<HomePage> {
                 min: 1,
                 max: 15,
                 divisions: 14,
-<<<<<<< HEAD
                 label: howManyPeople.toString(),
                 value: howManyPeople.toDouble(),
                 onChanged: (value) {
                   setState(() {
                     howManyPeople = value.toInt();
-=======
-                label: howManyFriends.toString(),
-                value: howManyFriends.toDouble(),
-                onChanged: (value) {
-                  setState(() {
-                    howManyFriends = value.toInt();
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
                   });
                 },
               ),
@@ -316,11 +296,7 @@ class _HomePageState extends State<HomePage> {
                           MaterialPageRoute(
                             builder: (context) => ResultsPage(
                                 bill: double.parse(bill),
-<<<<<<< HEAD
                                 howManyPeople: howManyPeople,
-=======
-                                howManyFriends: howManyFriends,
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
                                 tip: tip,
                                 tax: tax),
                           ),

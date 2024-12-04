@@ -7,21 +7,13 @@ import 'package:flutter/material.dart';
 class ResultsPage extends StatefulWidget {
   ResultsPage(
       {required this.bill,
-<<<<<<< HEAD
       required this.howManyPeople,
-=======
-      required this.howManyFriends,
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
       required this.tip,
       required this.tax,
       super.key});
 
   double bill = 0.0;
-<<<<<<< HEAD
   int howManyPeople = 1;
-=======
-  int howManyFriends = 1;
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
   int tip = 0;
   int tax = 0;
 
@@ -39,11 +31,7 @@ class _ResultsPageState extends State<ResultsPage> {
     setState(() {
       billPerPerson =
           (widget.bill + (widget.bill * (widget.tax / 100)) + widget.tip) /
-<<<<<<< HEAD
               widget.howManyPeople;
-=======
-              (widget.howManyFriends + 1);
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
     });
   }
 
@@ -101,11 +89,7 @@ class _ResultsPageState extends State<ResultsPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-<<<<<<< HEAD
                                 'People',
-=======
-                                'Friends',
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
                                 style: MyTextStyles.body,
                               ),
                               Text(
@@ -123,11 +107,7 @@ class _ResultsPageState extends State<ResultsPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-<<<<<<< HEAD
                                 widget.howManyPeople.toString(),
-=======
-                                widget.howManyFriends.toString(),
->>>>>>> 1ba424eda9de2a4381de2ea8899fe638345b373b
                                 style: MyTextStyles.body,
                               ),
                               Text(
